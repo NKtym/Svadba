@@ -17,11 +17,11 @@ export default function Home() {
         </p>
 
         <h1 className="text-4xl md:text-5xl font-light text-gray-800 mt-4 animate-fade-in animate-delay-1">
-          Алина
+          Павел
         </h1>
         <p className="text-2xl text-amber-600 my-2 animate-fade-in animate-delay-1">&</p>
         <h1 className="text-4xl md:text-5xl font-light text-gray-800 animate-fade-in animate-delay-1">
-          Дмитрий
+          Мария
         </h1>
 
         <div className="ornament text-lg my-6 animate-fade-in animate-delay-2">✦</div>

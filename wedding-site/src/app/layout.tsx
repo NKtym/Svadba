@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Свадьба Алины и Дмитрия",
+  title: "Свадьба Павла и Марии",
   description: "Приглашение на свадьбу",
 };
 
