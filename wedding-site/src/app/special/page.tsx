@@ -15,7 +15,7 @@ export default function SpecialPage() {
           alt=""
           style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }}
         />
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(255,255,255,0.88)" }} />
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(255,255,255,0.55)" }} />
         <div className="relative p-8 md:p-12">
 
           <p className="text-sm tracking-[0.3em] uppercase text-amber-700 mt-2 animate-fade-in animate-delay-1">
