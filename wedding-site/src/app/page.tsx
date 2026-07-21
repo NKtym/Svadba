@@ -102,7 +102,7 @@ export default function Home() {
           </div>
 
           <p className="text-xs text-gray-400 mt-8 animate-fade-in animate-delay-4">
-            Пожалуйста, подтвердите присутствие до 15 августа 2026
+            Пожалуйста, подтвердите присутствие до 5 августа 2026
           </p>
         </div>
       </div>
