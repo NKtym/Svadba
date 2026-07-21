@@ -7,7 +7,7 @@ export default function DresscodePage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-amber-50 via-rose-50 to-purple-50">
-      <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center overflow-visible">
+      <div className="invitation-card rounded-2xl p-8 md:p-12 w-full max-w-4xl text-center">
         <p className="text-sm tracking-[0.3em] uppercase text-amber-700 animate-fade-in">
           Памятка гостю
         </p>
@@ -30,10 +30,8 @@ export default function DresscodePage() {
             src="/dresscode.jpg"
             alt="Дресс-код: пастельные тона"
             className="w-full rounded-xl"
-            style={{ transform: "scale(1.3)", transformOrigin: "top center" }}
           />
         </div>
-        <div style={{ height: "80px" }} />
 
         <button
           onClick={() => router.push("/survey")}
