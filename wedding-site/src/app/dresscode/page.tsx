@@ -32,7 +32,7 @@ export default function DresscodePage() {
             <img
               src="/dresscode.jpg"
               alt="Дресс-код: пастельные тона"
-              className="w-full rounded-xl"
+              style={{ width: "33%", height: "auto", margin: "1rem auto" }}
             />
           </div>
 
