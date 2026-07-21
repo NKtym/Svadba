@@ -8,19 +8,14 @@ export default function SpecialPage() {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-amber-50 via-rose-50 to-purple-50">
-      <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
-        <img
-          src="/wedding-bg.jpg"
-          alt="Павел и Мария"
-          style={{ width: "100%", height: "auto", maxHeight: "320px", objectFit: "cover", borderRadius: "0.75rem", marginBottom: "1.5rem" }}
-        />
-
-        <img
-          src="/wedding-bg.jpg"
-          alt="Павел и Мария"
-          style={{ width: "100%", height: "auto", maxHeight: "320px", objectFit: "cover", borderRadius: "0.75rem", marginBottom: "1.5rem" }}
-        />
+    <div className="relative min-h-screen flex items-center justify-center p-4">
+      <img
+        src="/wedding-bg.jpg"
+        alt=""
+        style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 }}
+      />
+      <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(255,255,255,0.85)", zIndex: 1 }} />
+      <div className="relative z-10 invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
 
         <p className="text-sm tracking-[0.3em] uppercase text-amber-700 mt-2 animate-fade-in animate-delay-1">
           Приглашение на свадьбу
