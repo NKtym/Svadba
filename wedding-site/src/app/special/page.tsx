@@ -101,7 +101,7 @@ export default function SpecialPage() {
 
         <div className="mt-10 animate-fade-in animate-delay-4">
           <button
-            onClick={() => router.push("/survey")}
+            onClick={() => router.push("/dresscode")}
             className="btn-primary text-white px-10 py-4 rounded-full text-lg font-medium tracking-wide"
           >
             Я приду
