@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "Response" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" SERIAL NOT NULL,
     "fullName" TEXT NOT NULL,
     "attending" BOOLEAN NOT NULL,
     "plusOne" BOOLEAN NOT NULL DEFAULT false,
@@ -8,14 +8,18 @@ CREATE TABLE "Response" (
     "allergies" TEXT,
     "drinkPreferences" TEXT,
     "foodPreferences" TEXT,
-    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Response_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "Admin" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" SERIAL NOT NULL,
     "login" TEXT NOT NULL,
-    "password" TEXT NOT NULL
+    "password" TEXT NOT NULL,
+
+    CONSTRAINT "Admin_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
