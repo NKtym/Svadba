@@ -21,11 +21,13 @@ export default function DresscodePage() {
           если вы будете придерживаться этого дресс-кода.
         </p>
 
-        <img
-          src="/dresscode.jpg"
-          alt="Дресс-код: пастельные тона"
-          className="w-full rounded-xl mt-6 animate-fade-in animate-delay-3"
-        />
+        <div className="overflow-hidden mt-6 animate-fade-in animate-delay-3" style={{ height: "280px" }}>
+          <img
+            src="/dresscode.jpg"
+            alt="Дресс-код: пастельные тона"
+            style={{ width: "150%", maxWidth: "none", marginLeft: "-25%", marginTop: "-40px" }}
+          />
+        </div>
 
         <button
           onClick={() => router.push("/survey")}
