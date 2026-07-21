@@ -10,13 +10,10 @@ export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-amber-50 via-rose-50 to-purple-50">
       <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
-        <div className="w-full h-64 md:h-80 rounded-xl overflow-hidden mb-6">
-          <img
-            src="/wedding-bg.jpg"
-            alt="Павел и Мария"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div
+          className="w-full h-64 md:h-80 rounded-xl overflow-hidden mb-6 bg-cover bg-center"
+          style={{ backgroundImage: "url('/wedding-bg.jpg')" }}
+        />
 
         <div className="ornament animate-fade-in">✦ ✦ ✦</div>
 
