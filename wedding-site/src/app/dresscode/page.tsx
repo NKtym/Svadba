@@ -16,18 +16,23 @@ export default function DresscodePage() {
           Дресс-код
         </h2>
 
+        <p className="text-lg text-amber-700 tracking-[0.2em] uppercase mt-2 animate-fade-in animate-delay-1">
+          пастельные тона
+        </p>
+
         <p className="text-gray-600 leading-relaxed mt-4 animate-fade-in animate-delay-2">
           Для нас главное ваше присутствие, но мы будем рады,
           если вы будете придерживаться этого дресс-кода.
         </p>
 
-        <div className="overflow-hidden mt-6 animate-fade-in animate-delay-3" style={{ height: "280px" }}>
+        <div className="mt-6 animate-fade-in animate-delay-3" style={{ transform: "scale(1.5)", transformOrigin: "top center" }}>
           <img
             src="/dresscode.jpg"
             alt="Дресс-код: пастельные тона"
-            style={{ width: "150%", maxWidth: "none", marginLeft: "-25%", marginTop: "-40px" }}
+            className="w-full rounded-xl"
           />
         </div>
+        <div style={{ height: "120px" }} />
 
         <button
           onClick={() => router.push("/survey")}
