@@ -9,19 +9,18 @@ export default function Home() {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center p-4">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/wedding-bg.jpg"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-amber-50 via-rose-50 to-purple-50">
+      <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
+        <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden mb-6">
+          <Image
+            src="/wedding-bg.jpg"
+            alt="Павел и Мария"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
 
-      <div className="relative z-10 invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
         <div className="ornament animate-fade-in">✦ ✦ ✦</div>
 
         <p className="text-sm tracking-[0.3em] uppercase text-amber-700 mt-6 animate-fade-in animate-delay-1">
