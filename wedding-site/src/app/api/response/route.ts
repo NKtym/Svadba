@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const { fullName, attending, plusOne, plusOneName, allergies, drinkPreferences, foodPreferences } = body;
+  const { fullName, attending, plusOne, plusOneName, allergies, drinkPreferences } = body;
 
   if (!fullName || typeof attending !== "boolean") {
     return NextResponse.json({ error: "Заполните обязательные поля" }, { status: 400 });
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
       plusOneName: attending && plusOne ? plusOneName : null,
       allergies: allergies || null,
       drinkPreferences: drinkPreferences || null,
-      foodPreferences: foodPreferences || null,
+
     },
   });
 

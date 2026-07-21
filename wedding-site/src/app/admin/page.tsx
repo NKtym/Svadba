@@ -11,7 +11,7 @@ interface ResponseEntry {
   plusOneName: string | null;
   allergies: string | null;
   drinkPreferences: string | null;
-  foodPreferences: string | null;
+
   createdAt: string;
 }
 
@@ -160,7 +160,7 @@ export default function AdminPage() {
                       )}
                       {r.allergies && <p>Аллергии: {r.allergies}</p>}
                       {r.drinkPreferences && <p>Напитки: {r.drinkPreferences}</p>}
-                      {r.foodPreferences && <p>Блюда: {r.foodPreferences}</p>}
+
                     </div>
                   )}
                 </div>

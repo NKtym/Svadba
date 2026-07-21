@@ -2,14 +2,26 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
+    <div className="relative min-h-screen flex items-center justify-center p-4">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/wedding-bg.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+      <div className="relative z-10 invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
         <div className="ornament animate-fade-in">✦ ✦ ✦</div>
 
         <p className="text-sm tracking-[0.3em] uppercase text-amber-700 mt-6 animate-fade-in animate-delay-1">
@@ -39,14 +51,15 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <a
-              href="https://yandex.ru/maps/org/altetstsa/1108085591/?ll=30.300681%2C59.962421&z=15"
+              href="https://yandex.ru/maps/org/otdel_zags_krasnogvardeyskogo_rayona/1120034982/?ll=30.408250%2C59.949154&z=17.14"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium underline underline-offset-4 hover:text-amber-900 transition-colors"
             >
-              Ресторан «Альтецца»
+              ЗАГС Красногвардейского района
             </a>
           </div>
+          <p className="text-sm text-gray-500">Большеохтинский просп., 11, корп. 1, Санкт-Петербург</p>
 
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,15 +72,23 @@ export default function Home() {
             <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span>Сбор гостей в 16:00</span>
+            <span>Начало бракосочетания в 12:40</span>
           </div>
 
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
             </svg>
-            <span>Лахтинская ул., 16, Санкт-Петербург, БЦ «Астра», этаж 9</span>
+            <a
+              href="https://yandex.ru/maps/org/altetstsa/1108085591/?ll=30.300681%2C59.962421&z=15"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline underline-offset-4 hover:text-amber-900 transition-colors"
+            >
+              Ресторан «Альтецца»
+            </a>
           </div>
+          <p className="text-sm text-gray-500">Лахтинская ул., 16, БЦ «Астра», этаж 9, Санкт-Петербург</p>
 
           <div className="flex items-center justify-center gap-3 text-gray-700">
             <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,8 +101,10 @@ export default function Home() {
         {showDetails && (
           <div className="mt-6 p-4 bg-amber-50/50 rounded-lg animate-fade-in">
             <p className="text-gray-600 text-sm leading-relaxed">
-              Мы будем рады разделить с вами этот особенный день. Программа вечера включает
-              welcome, банкет, танцы и много радостных моментов.
+              Будем рады видеть вас на бракосочетании! Просим прибыть в ЗАГС
+              за 20 минут до начала ceremony — к 12:20. После ceremony
+              у нас запланирована прогулка по Санкт-Петербургу на лимузине.
+              Далее в 16:00 приглашаем на банкет и welcome в ресторан «Альтецца».
               Просим вас подтвердить присутствие, чтобы мы могли всё подготовить.
             </p>
           </div>

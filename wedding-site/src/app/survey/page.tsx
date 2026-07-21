@@ -12,7 +12,7 @@ export default function SurveyPage() {
     plusOneName: "",
     allergies: "",
     drinkPreferences: "",
-    foodPreferences: "",
+
   });
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -191,16 +191,7 @@ export default function SurveyPage() {
                 />
               </div>
 
-              <div className="animate-fade-in animate-delay-4">
-                <label className="block text-sm text-gray-600 mb-1.5">Предпочтения по блюдам</label>
-                <textarea
-                  value={formData.foodPreferences}
-                  onChange={(e) => setFormData({ ...formData, foodPreferences: e.target.value })}
-                  placeholder="Вегетарианское, без глютена, особые пожелания..."
-                  rows={2}
-                  className="form-input w-full px-4 py-3 rounded-lg bg-white resize-none"
-                />
-              </div>
+
             </>
           )}
 

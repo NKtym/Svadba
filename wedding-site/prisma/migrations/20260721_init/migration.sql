@@ -7,7 +7,7 @@ CREATE TABLE "Response" (
     "plusOneName" TEXT,
     "allergies" TEXT,
     "drinkPreferences" TEXT,
-    "foodPreferences" TEXT,
+
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Response_pkey" PRIMARY KEY ("id")

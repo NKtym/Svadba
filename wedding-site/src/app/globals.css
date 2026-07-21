@@ -6,14 +6,13 @@
 }
 
 body {
-  background: linear-gradient(135deg, #fdf6f0 0%, #fce4ec 50%, #f3e5f5 100%);
   min-height: 100vh;
 }
 
 .invitation-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary {

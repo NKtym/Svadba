@@ -15,7 +15,7 @@ model Response {
   plusOneName      String?
   allergies        String?
   drinkPreferences String?
-  foodPreferences  String?
+
   createdAt        DateTime @default(now())
 }
 
