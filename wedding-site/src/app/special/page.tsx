@@ -29,11 +29,11 @@ export default function SpecialPage() {
         <h1 className="text-4xl md:text-5xl font-light text-gray-800 mt-4 animate-fade-in animate-delay-1">
           Павел
         </h1>
-        <img src="/doves.png" alt="" style={{ width: "80px", height: "auto", margin: "0.5rem auto" }} />
-
+        <p className="text-2xl text-amber-600 my-2 animate-fade-in animate-delay-1">&</p>
         <h1 className="text-4xl md:text-5xl font-light text-gray-800 animate-fade-in animate-delay-1">
           Мария
         </h1>
+        <img src="/doves.png" alt="" style={{ width: "160px", height: "auto", margin: "1rem auto" }} />
 
         <p className="text-gray-600 leading-relaxed animate-fade-in animate-delay-2 mt-6">
           Мы рады сообщить, что наш союз будет скреплён узами брака,
