@@ -12,7 +12,7 @@ export default function Home() {
       <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
         <div
           className="w-full h-64 md:h-80 rounded-xl overflow-hidden mb-6 bg-cover bg-center"
-          style={{ backgroundImage: "url('/wedding-bg.jpg')" }}
+          style={{ backgroundImage: "url('/wedding-bg.png')" }}
         />
 
         <div className="ornament animate-fade-in">✦ ✦ ✦</div>
