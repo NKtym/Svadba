@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { weddingPhoto } from "@/lib/photo";
 
 export default function Home() {
   const router = useRouter();
@@ -12,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-amber-50 via-rose-50 to-purple-50">
       <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
         <img
-          src={weddingPhoto}
+          src="/wedding-bg.jpg"
           alt="Павел и Мария"
           style={{ width: "100%", height: "auto", maxHeight: "320px", objectFit: "cover", borderRadius: "0.75rem", marginBottom: "1.5rem" }}
         />
