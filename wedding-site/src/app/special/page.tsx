@@ -11,9 +11,10 @@ export default function SpecialPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-amber-50 via-rose-50 to-purple-50">
       <div className="invitation-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center">
-        <div
-          className="w-full h-64 md:h-80 rounded-xl overflow-hidden mb-6 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('${weddingPhoto}')` }}
+        <img
+          src={weddingPhoto}
+          alt="Павел и Мария"
+          style={{ width: "100%", height: "auto", maxHeight: "320px", objectFit: "cover", borderRadius: "0.75rem", marginBottom: "1.5rem" }}
         />
 
         <div className="ornament animate-fade-in">✦ ✦ ✦</div>
