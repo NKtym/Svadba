@@ -16,23 +16,26 @@ export default function SpecialPage() {
           style={{ width: "100%", height: "auto", maxHeight: "320px", objectFit: "cover", borderRadius: "0.75rem", marginBottom: "1.5rem" }}
         />
 
-        <div className="ornament animate-fade-in">✦ ✦ ✦</div>
+        <img
+          src="/wedding-bg.jpg"
+          alt="Павел и Мария"
+          style={{ width: "100%", height: "auto", maxHeight: "320px", objectFit: "cover", borderRadius: "0.75rem", marginBottom: "1.5rem" }}
+        />
 
-        <p className="text-sm tracking-[0.3em] uppercase text-amber-700 mt-6 animate-fade-in animate-delay-1">
+        <p className="text-sm tracking-[0.3em] uppercase text-amber-700 mt-2 animate-fade-in animate-delay-1">
           Приглашение на свадьбу
         </p>
 
         <h1 className="text-4xl md:text-5xl font-light text-gray-800 mt-4 animate-fade-in animate-delay-1">
           Павел
         </h1>
-        <p className="text-2xl text-amber-600 my-2 animate-fade-in animate-delay-1">&</p>
+        <img src="/doves.png" alt="" style={{ width: "80px", height: "auto", margin: "0.5rem auto" }} />
+
         <h1 className="text-4xl md:text-5xl font-light text-gray-800 animate-fade-in animate-delay-1">
           Мария
         </h1>
 
-        <div className="ornament text-lg my-6 animate-fade-in animate-delay-2">✦</div>
-
-        <p className="text-gray-600 leading-relaxed animate-fade-in animate-delay-2">
+        <p className="text-gray-600 leading-relaxed animate-fade-in animate-delay-2 mt-6">
           Мы рады сообщить, что наш союз будет скреплён узами брака,
           и хотим разделить этот важный день с самыми близкими людьми.
           Приглашаем вас на торжество в честь нашей свадьбы!
